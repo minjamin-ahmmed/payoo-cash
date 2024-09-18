@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="black">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Cash</title>
+
+    <!-- Added Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+.montserrat{
+  font-family: "Montserrat", sans-serif;
+}
+</style>
+
+<!-- Daisy Ui and Tailwind Css -->
+ 
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="montserrat">
+    <h1 class="text-center text-4xl font-extrabold text-orange-700 mt-12 mb-4">Transaction Area</h1>
+
+<header class="flex justify-center">
+
+    <!-- Current Balance Card -->
+    <div class="stats bg-primary text-primary-content rounded-2xl bg-gradient-to-r from-yellow-700 via-red-700 to-orange-900 "> 
+
+        <div class="stat">
+
+          <div class="stat-title">Current balance</div>
+          <div class="stat-value">$ <span id="balance">9000</span> </div>
+
+        </div>
+    </div>
+</header>
+
+<main class="flex justify-center mt-5">
+    <div class="card bg-gradient-to-r from-yellow-700 via-red-700 to-orange-900  w-full max-w-sm shrink-0 shadow-2xl rounded-2xl">
+        <h1 class="text-center text-3xl font-extrabold mt-3">Cash Out</h1>
+        <form class="card-body">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text text-lg font-bold">Amount</span>
+            </label>
+            <input id="cashout-amount" type="text" placeholder="Enter Your Amount" class="input input-bordered rounded-lg" required />
+          </div>
+
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text text-lg font-bold">Pin Number</span>
+            </label>
+            <input id="pin" type="Enter Your Pin" placeholder="password" class="input input-bordered rounded-lg" required />
+
+            <label class="label">
+              <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+            </label>
+          </div>
+
+          <div class="form-control mt-6">
+            <button id="btn-cashout" class="btn btn-primary bg-black rounded-lg">Cash Out</button>
+          </div>
+
+        </form>
+
+      </div>
+</main>
+
+  <script src="js/cash-out.js"></script>
+</body>
+</html>
